@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  margin: 0;
+  font-family: "URW Palladio L", sans-serif;
+}
+
+div {
+  color: cornsilk;
+}
+
+div.added {
+  color: lightseagreen;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body {
+  /*background-image: linear-gradient(to bottom, #ffffff, #e7e6e7, #cfcdcf, #b9b5b6, #a39e9e);*/
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: white;
+
+  /*min-width:1000px;        !* Suppose you want minimum width of 1000px *!*/
+  /*width: auto !important;  !* Firefox will set width as auto *!*/
+  /*width:1000px;            !* As IE6 ignores !important it will set width as 1000px; *!*/
+}
+
+div, body{
+  margin: 0;
+  padding: 0;
+  font-family: "URW Palladio L", sans-serif;
+
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.message {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height:45%;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.5em;
+}

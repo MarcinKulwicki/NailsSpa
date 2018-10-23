@@ -1,0 +1,145 @@
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  position: static;
+
+  background-color: rgba(0,0,0,0);
+  width: 100%;
+  height: auto;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /*height: 40vmin;*/
+  /*width: auto;*/
+
+  max-width: 400px;
+  max-height: 380px;
+
+  min-width: 200px;
+  min-height: 180px;
+
+  width: 40vmin;
+
+  border: none;
+  background-color: rgba(0,0,0,0);
+  /*margin: 2%;*/
+
+  -webkit-box-shadow: 31px 43px 46px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 31px 43px 46px -10px rgba(0,0,0,0.75);
+  box-shadow: 31px 43px 46px -10px rgba(0,0,0,0.75);
+}
+figure {
+  background-color: rgba(0,0,0,0);
+
+}
+
+.hover figure img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}
+.focus {
+  display: inline-block;
+  color: black;
+}
+.focus:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transform: scale3d(-1, 1, 2);
+  transition: 1s ease-in-out;
+
+
+}
+.focus:hover::after{
+  width: 100%;
+  transform: scale3d(1, 1, 1);
+  transition: 2s ease-in-out;
+}
+
+.label_grid {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  color: black;
+
+}
+.label_grid:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #000;
+  transform: scale3d(-1, 5, -2);
+  transition: 1s ease-in-out;
+
+}
+.label_grid:hover::after {
+  width: 100%;
+  transform: scale3d(0.4, 1, 1);
+  transition: 1s ease-in-out;
+
+}
+.label_grid span {
+  background-color: rgba(0,0,0,0);
+  margin-top: 20px;
+  display:block;
+  font-weight: bold;
+  font-size: 2vmin;
+}
+.addedContent {
+  color: black;
+  height: auto;
+  width: 100%;
+  background-color: rgb(235,235,235);
+  margin-top: 1%;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.information {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  width: 90%;
+}
+.more_btn {
+  float: right;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 3.5vmin;
+  margin: 2vmin;
+  padding: 2vmin;
+  font-family: "URW Palladio L", sans-serif;
+}
+.title{
+  font-size: 10vmin;
+  color: black;
+}
+.description {
+  font-size: 2vmin;
+  color: black;
+  text-align: justify;
+}
+

@@ -1,0 +1,69 @@
+<div class="container">
+  <p class="label">Możesz się z nami skontaktować za pomocą</p>
+
+
+    <mat-drawer-container class="sidenav-container">
+      <mat-drawer #drawerPhone class="example-sidenav" mode="push">
+        <p class="inBox">Numer telefonu</p>
+        <p class="inBox">536 278 066</p>
+      </mat-drawer>
+      <button mat-button class="photo" (click)="drawerPhone.toggle()">
+        <img src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/phone.png?alt=media&token=ed41aef0-8fec-4f48-9fef-e88fd7e0601d">
+      </button>
+    </mat-drawer-container>
+
+  <mat-drawer-container class="sidenav-container" >
+    <mat-drawer #drawerEmail class="example-sidenav" mode="push">
+      <p class="inBox">Adress email</p>
+      <p class="inBox">mg.magnails@gmail.com</p>
+      <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=mg.magnails@gmail.com&su=Kontakt&body=Dzień dobry,">
+        <button mat-raised-button style="color: black" class="inBoxButton">
+          Napisz
+        </button>
+      </a>
+    </mat-drawer>
+    <button mat-button class="photo" (click)="drawerEmail.toggle()"><img src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/email.png?alt=media&token=b9d224d3-498f-469a-9a9d-3e85a1095e1c"></button>
+  </mat-drawer-container>
+
+  <mat-drawer-container class="sidenav-container" >
+    <mat-drawer #drawerLocalization class="example-sidenav" mode="push">
+      <p class="inBox">Na Szańcach 8A 50-320</p>
+      <p class="inBox">Wrocław</p>
+      <a target="_blank" href="https://www.google.com/maps/place/MAG+NAILS+%26+SPA+MAGDALENA+OLEKSY/@51.1185989,17.042984,15z/data=!4m2!3m1!1s0x0:0x6fe41de1d15b51ac?sa=X&ved=2ahUKEwiukeaUifzdAhVL1ywKHTCVBZcQ_BIwEHoECAkQCw">
+        <button mat-raised-button style="color: black;margin-bottom: 12px" class="inBoxButton">
+          Pokaz na mapie
+        </button>
+      </a><div></div>
+      <a target="_blank" href="https://www.google.com/maps/dir//mag+nails+wroclaw/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x470fe9d7fcd5dfdb:0x6fe41de1d15b51ac?sa=X&ved=2ahUKEwiukeaUifzdAhVL1ywKHTCVBZcQ9RcwEXoECAkQEw">
+        <button mat-raised-button style="color: black" class="inBoxButton">
+          Wyznacz trase
+        </button>
+      </a>
+    </mat-drawer>
+    <button mat-button class="photo" (click)="drawerLocalization.toggle()"><img src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/localization.png?alt=media&token=b247eb74-f8f3-44c9-8c94-bbac07f82835"></button>
+  </mat-drawer-container>
+
+  <mat-drawer-container class="sidenav-container" >
+    <mat-drawer #drawerInstagram class="example-sidenav" mode="push">
+      <p class="inBox">W trakcie budowy</p>
+    </mat-drawer>
+    <button mat-button class="photo inBox" (click)="drawerInstagram.toggle()"><img src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/instagram.png?alt=media&token=70fc0f10-686d-4877-b19d-ab36f8c40e8a"></button>
+  </mat-drawer-container>
+
+  <mat-drawer-container class="sidenav-container" >
+    <mat-drawer #drawerFacebook class="example-sidenav" mode="push">
+      <a target="_blank" href="https://www.facebook.com/mg.magnails/">
+        <button mat-raised-button style="color: black;margin-bottom: 12px" class="inBoxButton">
+          Pokaz profil
+        </button>
+      </a><div></div>
+      <a target="_blank" href="https://m.me/mg.magnails">
+        <button mat-raised-button style="color: black;margin-bottom: 12px" class="inBoxButton">
+          Napisz do nas
+        </button>
+      </a>
+    </mat-drawer>
+    <button mat-button class="photo" (click)="drawerFacebook.toggle()"><img src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/facebook.png?alt=media&token=b2fceb3c-4d3c-45b7-ba23-9503941f4fbc"></button>
+  </mat-drawer-container>
+
+</div>

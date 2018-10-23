@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  min-height: 500px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgb(250,250,250);
+
+  justify-content: center;
+  justify-items: center;
+
+}
+.photo {
+  /*margin: 1%;*/
+  /*max-height: 270px;*/
+  /*z-index: 2;*/
+  /*height: 18vw;*/
+  /*width: auto;*/
+  border-radius: 7%;
+  background-color: rgba(0,0,0,0);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.label {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  color: #204060;
+  font-size: 4vh;
+  text-align: center;
+  font-weight: bold;
+}
+/*.sidenav-container {*/
+  /*height: 2vw;*/
+  /*width: auto;*/
+  /*background-color: red;*/
+/*}*/
+
+.example-sidenav-content {
+  display: flex;
+  height: auto;
+  font-size: 2vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 0.01%;
+  max-height: 100%;
+  width: auto;
+}
+/*button{*/
+  /*border-radius: 20px;*/
+  /*width: auto;*/
+  /*height: auto;*/
+/*}*/
+img {
+  /*margin-right: 13%;*/
+  max-height: 270px;
+  height: 35vw;
+  width: auto;
+  /*z-index: -1;*/
+
+  position: relative;
+}
+.inBox {
+  font-size: 2vmin;
+  /*font-size: 12vm;*/
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.inBoxButton {
+  font-size: 2vmin;
+}
+.sidenav-container {
+  border-radius: 7%;
+  height: 100%;
+  margin: 0.2%;
+}
+button {
+  font-family: "URW Palladio L", sans-serif;
+}

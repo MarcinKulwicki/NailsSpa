@@ -1,0 +1,21 @@
+
+
+
+polyfiles.ts
+
+import 'core-js/es6/reflect';
+import 'core-js/es7/reflect';
+import 'zone.js/dist/zone';
+import 'hammerjs';
+import 'web-animations-js';
+
+
+npm install web-animations-js --save
+npm i -S hammerjs
+npm i -D @types/hammerjs
+
+
+
+style.css
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';

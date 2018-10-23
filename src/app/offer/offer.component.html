@@ -1,0 +1,69 @@
+<div class="body hover column">
+  <div class="label_grid" style="color: black;" (mouseenter)="addContent(1)">
+    <figure>
+      <button class="container" (onclick)="addContent(1)"><img
+        src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/Uslugi.png?alt=media&token=59166a5f-aa01-4b9f-bcaa-357ab03d0195">
+      </button>
+      <span>Usługi</span>
+    </figure>
+  </div>
+
+  <div class="label_grid" style="color: black;" (mouseenter)="addContent(2)">
+    <figure>
+      <button class="container" (onclick)="addContent(2)"><img
+        src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/szkolenia.jpg?alt=media&token=5dd252ba-a229-44b9-b440-ca3371cad1eb">
+      </button>
+      <span>Szkolenia</span></figure>
+  </div>
+
+  <div class="label_grid" style="color: black;" (mouseenter)="addContent(3)">
+    <figure>
+      <button class="container" (onclick)="addContent(3)"><img
+        src="https://firebasestorage.googleapis.com/v0/b/angular-hosting-test-2e119.appspot.com/o/Praca.jpg?alt=media&token=870ac5c1-c3ce-4f37-96f6-9fd6efb90a05">
+      </button>
+      <span>Praca</span></figure>
+  </div>
+
+</div>
+
+<div style="color: black;width: 100%; height: auto">
+  <div *ngIf="content === 1; else training">
+    <div class="addedContent">
+      <div class="information">
+        <span>
+          <div class="title">{{titleServices}}</div>
+          <div class="description">{{descriptionServices}}</div>
+          <button mat-raised-button class="more_btn">Zobacz wiecej</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #training>
+  <div *ngIf="content === 2; else work">
+    <div class="addedContent">
+      <div class="information">
+        <span>
+          <div class="title">{{titleTraining}}</div>
+          <div class="description">{{descriptionTraining}}</div>
+          <button mat-raised-button class="more_btn" routerLink="/training">Zobacz wiecej</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<ng-template #work>
+  <div class="addedContent">
+    <div class="information">
+      <span>
+          <div class="title">{{titleWork}}</div>
+          <div class="description">{{descriptionWork}}</div>
+          <button mat-raised-button class="more_btn" routerLink="/work">Zobacz wiecej</button>
+        </span>
+    </div>
+  </div>
+</ng-template>
+
+
+<router-outlet></router-outlet>

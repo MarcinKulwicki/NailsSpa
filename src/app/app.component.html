@@ -1,0 +1,101 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div (window:resize)="onResize($event)">
+  <div *ngIf="getSize() > 500;else telephone">
+    <nav>
+      <!--<button class='navButtons' [ngClass]="{'selected': id === 1}" mat-button-->
+      <!--matTooltip="Dowiedz się czegoś więcej o nas"-->
+      <!--[matTooltipShowDelay]=1000-->
+      <!--routerLink="">Strona Główna-->
+      <!--</button>-->
+      <!--<div class="allButtons">-->
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 1}" (click)="addSelected(1)"
+              routerLink="">Strona Główna
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 2}" (click)="addSelected(2)"
+              routerLink="/offer">Oferta
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 3}" (click)="addSelected(3)"
+              routerLink="/training">Szkolenia
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 4}" (click)="addSelected(4)"
+              routerLink="/work">Praca
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 5}" (click)="addSelected(5)"
+              routerLink="/gallery">Galeria
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 6}" (click)="addSelected(6)"
+              routerLink="/staff">Personel
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 7}" (click)="addSelected(7)"
+              routerLink="/contact">Kontakt
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 8}" (click)="addSelected(8)"
+              routerLink="/cooperation">Współpraca
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 9}" (click)="addSelected(9)"
+              routerLink="/price-list">Cennik
+      </button>
+      <!--</div>-->
+      <!--<div class="company">-->
+      <!--Mag Nails-->
+      <!--</div>-->
+    </nav>
+  </div>
+  <ng-template #telephone>
+    <div class="navPhone">
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="navButtonPhone">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="addSelected(4)" routerLink="/work">Praca</button>
+        <button mat-menu-item (click)="addSelected(5)" routerLink="/gallery">Galeria</button>
+        <button mat-menu-item (click)="addSelected(6)" routerLink="/staff">Personel</button>
+        <button mat-menu-item (click)="addSelected(7)" routerLink="/contact">Kontakt</button>
+        <button mat-menu-item (click)="addSelected(8)" routerLink="/cooperation">Współpraca</button>
+        <button mat-menu-item (click)="addSelected(9)" routerLink="/price-list">Cennik</button>
+      </mat-menu>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 1}" (click)="addSelected(1)"
+              routerLink="">Strona Główna
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 2}"
+              (click)="addSelected(2)"
+              routerLink="/offer">Oferta
+      </button>
+      <button class="navButtonComputer focus" [ngClass]="{'selected': seletedId === 3}" (click)="addSelected(3)"
+              routerLink="/training">Szkolenia
+      </button>
+
+
+    </div>
+  </ng-template>
+</div>
+
+
+<div class="basic">
+  <div class="header"></div>
+  <div>
+    <!--<img src="https://firebasestorage.googleapis.com/v0/b/magnailstest.appspot.com/o/headerColors.png?alt=media&token=e51c704f-6698-4d8b-a528-1c82778e059e">-->
+    <video autoplay loop>
+      <source src="../../images/VarnishLane1080.mp4" type="video/mp4">
+      <!--<source src="../../images/VarnishLane1080.mp4" type="video/mp4">-->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="boxPipe"></div>
+</div>
+
+
+<router-outlet></router-outlet>
+
+<div class="footer">
+
+  <div class="created">
+    Created By MarcinKulwicki@protonmail.com
+  </div>
+</div>
+
+
+
+
