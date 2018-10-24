@@ -18,6 +18,11 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { StaffComponent } from './staff/staff.component';
 import { CooperationComponent } from './cooperation/cooperation.component';
 import { ServicesComponent } from './services/services.component';
+import { WorkService } from './services/work/work.service';
+import { ContentfulService } from './services/contentful/contentful.service';
+import { RouterModule, Routes } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
@@ -49,7 +54,7 @@ import { ServicesComponent } from './services/services.component';
     OfferComponent,
     PriceListComponent
   ],
-  providers: [],
+  providers: [WorkService, ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,13 @@
-<p>
-  work works!
-</p>
+<h1>{{title}}</h1>
+<div style="color: black">{{body}}</div>
+<h3>{{createdAt | date}}</h3>
+<h1>{{episode}}</h1>
+<div class="content">
+  <div class="tag" *ngFor="let tag of tags">
+    {{tag}}
+  </div>
+</div>
+
+
+
+

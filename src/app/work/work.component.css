@@ -1,0 +1,22 @@
+div.tag {
+  position: relative;
+  border: 1px solid black;
+  margin-left: 4px;
+  padding: 10px;
+  border-radius: 20vh;
+  width: 60px;
+  transition: 2s ease;
+  /*transition: background-color 2s ease;*/
+  color: black;
+}
+div.tag:hover {
+  background-color: lightgray;
+  border: none;
+  width: 200px;
+
+}
+div.content {
+  display: flex;
+  flex-wrap: wrap;
+  position: static;
+}
